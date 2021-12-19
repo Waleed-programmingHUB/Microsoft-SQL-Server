@@ -9,6 +9,7 @@
 -- CREATE DATABASE _DATABASE -- Command is used to Create new database
 -- Creating a Table in the Database
 
+
 -- Without Constraint
 
 --CREATE TABLE Students
@@ -45,4 +46,11 @@
 --	Email nvarchar(50) NOT NULL,
 --	MobileNumber NVARCHAR(12) NULL,
 --	Notes nvarchar(MAX) NULL,
+--)
+
+/* With Auto-Increament Key Identity */
+
+--CREATE TABLE Student_5(
+--	StudentId INT IDENTITY(1,3001) PRIMARY KEY NOT NULL,
+--	StudentName nvarchar(50)
 --)
