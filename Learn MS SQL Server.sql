@@ -80,21 +80,21 @@
 /* SQL WildCards */
 
 -- % module 
-SELECT * FROM Employees WHERE Title LIKE 'Sales%'
+--SELECT * FROM Employees WHERE Title LIKE 'Sales%'
 
--- Example 1
-SELECT * FROM Employees WHERE Title LIKE '%Sales%'
+---- Example 1
+--SELECT * FROM Employees WHERE Title LIKE '%Sales%'
 
--- Example 2 
-SELECT * FROM Employees WHERE FirstName LIKE 'Rob%'
+---- Example 2 
+--SELECT * FROM Employees WHERE FirstName LIKE 'Rob%'
 
--- _ underscore 
-SELECT * FROM Employees WHERE FirstName LIKE '_an%'
+---- _ underscore 
+--SELECT * FROM Employees WHERE FirstName LIKE '_an%'
 
--- if [] and Or [^]
+---- if [] and Or [^]
 
--- printing a record which letter name are starts with any english name
-SELECT * FROM Employees WHERE FirstName LIKE '[MNJ]%'
+---- printing a record which letter name are starts with any english name
+--SELECT * FROM Employees WHERE FirstName LIKE '[MNJ]%'
 
--- printing a record expect to this name are starts with any english name
-SELECT * FROM Employees WHERE FirstName LIKE '[^SLN]%'
+---- printing a record expect to this name are starts with any english name
+--SELECT * FROM Employees WHERE FirstName LIKE '[^SLN]%'
