@@ -1,0 +1,6 @@
+CREATE PROCEDURE UserDeleteByID
+@UserID int
+AS
+	BEGIN
+		DELETE FROM UsersTB WHERE UserID = @UserID
+	END

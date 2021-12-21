@@ -1,0 +1,6 @@
+CREATE PROCEDURE UsersViewByID
+@UserID int
+AS
+	BEGIN
+		SELECT * FROM UsersTB WHERE UserID = @UserID
+	END

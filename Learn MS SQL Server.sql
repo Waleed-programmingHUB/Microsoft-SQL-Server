@@ -54,3 +54,26 @@
 --	StudentId INT IDENTITY(1,3001) PRIMARY KEY NOT NULL,
 --	StudentName nvarchar(50)
 --)
+
+/* Selecting the database from NorthWind Database */
+
+/* print the table from the database */
+-- SELECT * FROM Employees
+
+/* Selecting a particular record in the table */
+--SELECT EmployeeID ,TitleOfCourtesy,FirstName ,LastName ,City FROM Employees
+
+/* Selecting a record in the table with change the Field title name */
+SELECT EmployeeID AS ID , FirstName +' '+ LastName AS 'Name' FROM Employees
+-- Label changing for readabilty 
+SELECT EmployeeID AS ID , FirstName +' '+ LastName AS 'Name' , TitleOfCourtesy AS 'Mr/Mrs' ,Title AS 'RANK POSITION' FROM Employees
+
+/* using a keyword WHERE */
+
+SELECT * FROM Employees WHERE EmployeeID = 5
+
+SELECT * FROM Employees WHERE TitleOfCourtesy = 'Mr.'
+
+SELECT * FROM Employees WHERE City = 'London'
+
+
