@@ -64,16 +64,34 @@
 --SELECT EmployeeID ,TitleOfCourtesy,FirstName ,LastName ,City FROM Employees
 
 /* Selecting a record in the table with change the Field title name */
-SELECT EmployeeID AS ID , FirstName +' '+ LastName AS 'Name' FROM Employees
+-- SELECT EmployeeID AS ID , FirstName +' '+ LastName AS 'Name' FROM Employees
+
 -- Label changing for readabilty 
-SELECT EmployeeID AS ID , FirstName +' '+ LastName AS 'Name' , TitleOfCourtesy AS 'Mr/Mrs' ,Title AS 'RANK POSITION' FROM Employees
+-- SELECT EmployeeID AS ID , FirstName +' '+ LastName AS 'Name' , TitleOfCourtesy AS 'Mr/Mrs' ,Title AS 'RANK POSITION' FROM Employees
 
 /* using a keyword WHERE */
 
-SELECT * FROM Employees WHERE EmployeeID = 5
+--SELECT * FROM Employees WHERE EmployeeID = 5
 
-SELECT * FROM Employees WHERE TitleOfCourtesy = 'Mr.'
+--SELECT * FROM Employees WHERE TitleOfCourtesy = 'Mr.'
 
-SELECT * FROM Employees WHERE City = 'London'
+--SELECT * FROM Employees WHERE City = 'London'
 
+/* SQL WildCards */
+
+-- % module 
+SELECT * FROM Employees WHERE Title LIKE 'Sales%'
+
+-- Example 1
+SELECT * FROM Employees WHERE Title LIKE '%Sales%'
+
+-- Example 2 
+SELECT * FROM Employees WHERE FirstName LIKE 'Rob%'
+
+-- _ underscore 
+SELECT * FROM Employees WHERE FirstName LIKE '_an%'
+
+-- [] and [^]
+-- printing a  record which letter name are starts with any english name
+SELECT * FROM Employees WHERE FirstName LIKE '[MNJ]%'
 
