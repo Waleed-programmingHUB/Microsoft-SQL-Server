@@ -91,7 +91,8 @@ SELECT * FROM Employees WHERE FirstName LIKE 'Rob%'
 -- _ underscore 
 SELECT * FROM Employees WHERE FirstName LIKE '_an%'
 
--- [] and [^]
+-- if [] and Or [^]
 -- printing a  record which letter name are starts with any english name
 SELECT * FROM Employees WHERE FirstName LIKE '[MNJ]%'
 
+SELECT * FROM Employees WHERE FirstName LIKE '[^MNJ%]'
